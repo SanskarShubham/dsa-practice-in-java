@@ -1,0 +1,13 @@
+{
+    "java.project.sourcePaths": [
+        "apna_coolege",
+        "arrays",
+        "looping",
+        "mock_interview",
+        "mock_interview3",
+        "oops",
+        "bit_manipulation03",
+        "pro_test1"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}
