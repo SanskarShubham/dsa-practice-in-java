@@ -1,25 +1,24 @@
+package bit_manipulation03;
+
+import java.util.Arrays;
+
 class Rotate_array15 {
     public static void rotate(int[] arr, int k) {
         int n = arr.length;
-        k = k % n;
-        int swap = 0;
-        int val =arr[0];
         int current_index = 0;
-            while (swap < n) {
-                 int pos = (k+current_index)%n;
-                 int temp = val;
-                 val  =arr[pos];
-                 current_index = pos;
-                 arr[pos] =temp;
-                 swap++;
-                 for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+" ");          
+        int cur_val = arr[0];
+        k = k % n;
+        int counter = 0;
+
+        while (counter < n) {
+            int new_index = (current_index + k) % n;
+            int temp = arr[new_index];
+            arr[new_index] = cur_val;
+            cur_val = temp;
+            current_index = new_index;
+            counter++;
         }
-        System.out.println();
-            }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+" ");          
-        }
+        System.out.println(Arrays.toString(arr));
     }
 
     public static void main(String[] args) {
