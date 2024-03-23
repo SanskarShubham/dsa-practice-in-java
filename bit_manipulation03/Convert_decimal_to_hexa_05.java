@@ -1,3 +1,5 @@
+package bit_manipulation03;
+
 import java.util.Scanner;
 
 public class Convert_decimal_to_hexa_05 {
