@@ -1,4 +1,4 @@
-package oops;
+
 
  class Triangle_05 {
     int  s1, s2, s3;

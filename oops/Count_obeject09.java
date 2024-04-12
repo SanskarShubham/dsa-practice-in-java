@@ -1,4 +1,4 @@
-package oops;
+
 
 public class Count_obeject09 {
        static int count = 0;
